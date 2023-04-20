@@ -346,6 +346,8 @@ header .icon-img img{
 }
 .Yearly .fl .box{
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .Yearly .fl .box span{
     padding: 30px;
@@ -629,6 +631,7 @@ header .icon-img img{
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    flex-wrap: wrap;
 }
 .Top-Search .box p{
     font-weight: 500;
@@ -653,6 +656,14 @@ header .icon-img img{
     padding: 10px 0;
     align-items: center;
 }
+
+@media(max-width:767px){
+    .Uploads .box{
+        flex-direction: column;
+        margin-bottom:10px ;
+    }
+}
+
 .Uploads .box .box1{
     display: flex;
     align-items: center;
@@ -664,6 +675,7 @@ header .icon-img img{
 @media(max-width:767px){
     .Uploads .box .box1{
         gap: 10px;
+        flex-direction: column;
     }
 }
 .Uploads .box .box1 h4{
@@ -673,6 +685,7 @@ header .icon-img img{
 }
 .Uploads .box .box1 p{
     color: #999;
+    text-align: center;
 }
 .Uploads .box .box2{
     background-color: #eee;
@@ -863,6 +876,7 @@ header .icon-img img{
     gap: 20px;
     padding-right: 20px;
     border-radius: 3px;
+    flex-wrap: wrap;
 }
 
 .Social_Media_Stats .box img{
@@ -956,18 +970,15 @@ header .icon-img img{
 .Projects .table{
     overflow-x: auto;
     margin: auto;
-    /* max-width: 100%; */
 }
 
-.Projects table{
-    /* width: 100%; */
-    min-width: 1000px;
+.Projects .table table{
 }
 
 @media (max-width: 767px){
     .Projects .table{
         overflow-x: auto;
-        width: 200px;
+        width:200px;
     }
     
 }
@@ -975,7 +986,7 @@ header .icon-img img{
 @media (min-width: 768px){
     .Projects .table{
         overflow-x: auto;
-        width: 450px;
+        width: 450%;
     }
     
 }
@@ -1062,6 +1073,12 @@ header .icon-img img{
     justify-content: space-between;
 }
 
+@media (max-width: 767px){
+    .Site_Control .box{
+        flex-direction: column;
+    }
+}
+
 .Site_Control .box > div{
     margin-bottom: 20px;
 }
@@ -1130,10 +1147,19 @@ header .icon-img img{
     padding-top: 20px;
 }
 
+@media (max-width: 767px){
+    .Security_Info .box{
+        flex-wrap:wrap ;
+        row-gap: 10px;
+    }
+}
+
+
 .Security_Info > div:nth-child(2),
 .Security_Info > div:nth-child(3){
     border-bottom: 1px solid #ddd ;
 }
+
 
 .Security_Info .box h5{
     margin-bottom: 10px;
@@ -1198,6 +1224,7 @@ header .icon-img img{
     padding-left: 15px;
     border-radius: 0 8px 8px 0;
     font-size: 15px;
+    width: 100%;
 }
 
 .Social_Info .box input:focus + div{
@@ -1487,6 +1514,7 @@ header .icon-img img{
     display: flex;
     gap: 10px;
     border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 767px){
